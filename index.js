@@ -88,3 +88,15 @@ function back() {
     document.getElementById("message").style.display = "none";
     document.getElementById("choose").style.display = "none";
 }
+
+function sendmessage() {
+  var form = new FormData(document.getElementById("for"));
+  var data = form.get("message");
+  if (data.length>0){
+       var node = document.createElement("P"); // Create a <li> node
+   var textnode = document.createTextNode(data); // Create a text node
+   node.appendChild(textnode); // Append the text to <li>
+   node.className='mes-r';
+   document.getElementById("chat").appendChild(node);
+  }
+}

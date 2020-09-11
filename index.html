@@ -223,16 +223,14 @@
         text-align: center;
         height: 50%;
         margin-bottom: 1%;
-      "><button type="button" class="" style="
+      "><a class="abut" style="
             float: right; position:sticky;top: 0;
-            background-color: orangered;
-            border-style: double;
           " onclick="closeForm()">
             X
-        </button>
+        </a>
         <h1>Hi!</h1>
         <br>
-        <button class="btn btn-info" onclick="openmes()">Ask Me anything</button> <br> <br>
+        <button class="btn btn-secondary" onclick="openmes()">Ask Me anything</button> <br> <br>
         <button class="btn btn-info" onclick="opensel()">Choose From our Services</button>
     </div>
 
@@ -241,33 +239,29 @@
 
 
 
-
+    <!-- person typing message -->
 
 
 
     <div class="message chat-popup form-container" id="message" style=" border-top-right-radius: 5px;
         border-top-left-radius: 5px;
-        border-color: black;
-        text-align: center;
-        height: 50%;
-        margin-bottom: 1%;">
-        <form action="" class="" style="text-align: center">
-            <button type="button" class="" style="
-            float: left; position:sticky;top: 0;
-            background-color: orangered;
-            border-style: double;
+        border-color: black;        height: 70%;
+        margin-bottom: 1%;"><a class="abut" style="
+            float: left; position:absolute;left: 5px;
           " onclick="back()">
-                <- </button> <button type="button" class="" style="
-            float: right; position:sticky;top: 0;
-            background-color: orangered;
-            border-style: double;
+            <- </a> <a class="abut" style=" position:absolute;right: 5px;
           " onclick="closeForm()">
-                    X
-            </button>
-            <h1>Hi!</h1>
-            How May I help you today?
-            <input type="text" name="message" required /><br /> <button type="button" onclick="getdata()"
-                class="btn btn-success" style="margin-top: 2%">
+                X
+        </a>
+        <br>
+        <div class="frame" id="chat" style="height: 70%;">
+            <p class="mes-l"> Hi</p>
+            <p class="mes-l">How I help you today?</p>
+        </div>
+        <br>
+        <form action="" id="for" style="text-align: center">
+            <input type="text" name="message" id="inbox" placeholder="Enter your Message" required /> <button
+                type="button" onclick="sendmessage()" class="btn btn-success" style="margin-top: 2%">
                 Send
             </button>
         </form>
@@ -277,33 +271,23 @@
 
 
 
-
-
-
-
-
-
-
-
+    <!-- choosing from given data -->
 
 
     <div class="choose chat-popup form-container" id="choose" style=" border-top-right-radius: 5px;
         border-top-left-radius: 5px;
         border-color: black;
         text-align: center;
-        height: 50%;
-        margin-bottom: 1%; overflow:auto "> <button type="button" class="" style="
+        height: 70%;
+        margin-bottom: 1%; overflow:auto ">
+        <a class="abut" style="
             float: left; position:sticky;top: 0;
-            background-color: orangered;
-            border-style: double;
           " onclick="back()">
-            <- </button> <button type="button" class="" style="
+            <- </a> <a class="abut" style="
             float: right; position:sticky;top: 0;
-            background-color: orangered;
-            border-style: double;
           " onclick="closeForm()">
                 X
-        </button>
+        </a>
         <form action="" class="" style="text-align: center">
             <strong class="extras"><b>OR</b></strong>
             <br class="extras" />
