@@ -264,20 +264,12 @@
           " onclick="closeForm()">
                     X
             </button>
-            <div class="frame">
-                <ul style="margin-top: 5%; width: 80%; background-color: aliceblue;"></ul>
-                <div>
-                    <div class="msj-rta macro">
-                        <form action="">
-                            <div class="text text-r" style="background:whitesmoke !important">
-                                <input name="mess" class="mytext" placeholder="Type a message"
-                                    onsubmit ="insertChat('me',this.FormData)" />
-                            </div><button type="button" class="btn btn-success"
-                                onsubmit="insertChat('me',this.FormData)">Send</button>
-                        </form>
-                    </div>
-
-                </div>
+            <h1>Hi!</h1>
+            How May I help you today?
+            <input type="text" name="message" required /><br /> <button type="button" onclick="getdata()"
+                class="btn btn-success" style="margin-top: 2%">
+                Send
+            </button>
         </form>
     </div>
 
@@ -368,8 +360,8 @@
 
 </html>
 
-<!-- TO_DO
+TO_DO
 add two buttons!---done
 add back function!-- done
 add mesages function!
-make ui look great -->
+make ui look great
